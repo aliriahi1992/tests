@@ -18,7 +18,7 @@ def calculate(request):
             model = genai.GenerativeModel('gemini-pro')
             
             # فرض می‌کنیم که می‌خواهیم از دو عدد برای تولید محتوای خاص استفاده کنیم
-            prompt = f"Please perform a calculation with the following numbers: {num1} and {num2}. Then multiply the result by 100."
+            prompt = f"یک جمله خلاقانه و غاشقانه خطاب به رضوان بگو و به عنوان یک دختر بینظیر توصیفش کن"
             response = model.generate_content(prompt)
 
             # اینجا باید پاسخ مدل را پردازش کنید
